@@ -1,0 +1,8 @@
+name: Test Script
+on: [push]
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: chmod +x ./student_tutorial.sh && ./student_tutorial.sh
