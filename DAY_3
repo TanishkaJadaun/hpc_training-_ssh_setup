@@ -1,0 +1,8 @@
+*Extension Activity 1.1: Inspecting Cache Line Sizes and CPU Topology (Section 1)
+Hardware-aware algorithms must align memory accesses with cache-line sizes (typically 64 bytes) to avoid "false sharing" or cache misses. Let's write code to inspect the deeper hardware attributes of your virtualized environment, including cache layers and CPU layout.*
+
+*Extension Activity 2.1*: Micro-Benchmarking Convolutional Channels (Section 2)
+oneDNN optimization relies heavily on the dimensional sizes of your tensors (channels, filter sizes). Let's test if oneDNN speedups are more pronounced when your filter/channel widths are powers-of-two (hardware friendly) versus non-powers-of-two.
+
+Activity 3.1: Automated Node-Type & Partition Suggester (Section 3)
+Let's build a functional, parameterized CLI tool that evaluates memory sizes, model architectures, and dataset scale to recommend whether to target a Xeon or Gaudi node, estimating the expected bottleneck (Compute-bound vs. Memory-bound).
